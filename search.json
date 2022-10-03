@@ -9,9 +9,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this blog"
+    "text": "This is my corner where I will post little things I find about data science and data visualization and share them with you all. I hope you will stick around and check back!"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -23,8 +23,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "blog",
+    "title": "Kyndall’s Blog",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 27, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "analysis\n\n\nvisualization\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nanalysis\n\n\nvisualization\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/generative-art-discussion-and-analysis/index.html",
+    "href": "posts/generative-art-discussion-and-analysis/index.html",
+    "title": "Generative Art: Discussion and Analysis",
+    "section": "",
+    "text": "The piece is titled “Edmond de Belamy, from La Famille de Belamy,” and was created by Obvious, a French trio consisting of a computer science student and two businessmen. Nobody in Obvious had a background in art… which is obvious. Sorry, I had to go for it.\nThe image shows a blurry impression of a portrait of a white man in a 17th century suit. The black of his suit and hair bleed seamlessly with the splash of black behind his head. The whole thing has the texture of brush strokes, but there is no clear direction to them, only vague swirls. He is positioned at the upper left corner of the canvas, with a generous amount of ivory beige between him and the bottom right corner. In sharp contrast to the man-shape smudge, occupying the lower right corner, is the sharp black text of a formula - the formula the Generative Adversarial Network used to create him.\nThis image is from some time ago, but experts in AI art even at that time were wondering how that image made it to Christie’s. GANs had been used for years by 2015, and other AI artists were already pioneering new methods. The code the team used to create the image was even open source. Christie’s reached out the the trio first, apparently in a bid to gauge the appetite for AI work among the artistic elite. The same place that sold a Leonardo da Vinci for $450 million only set the starting bid for this piece at $7,000.\nI, personally, think it’s just ok. It’s neat, but it doesn’t seem to explore anything else besides rote memorization and repetition, like a child in school. The white space at the bottom is like a metaphor for how much more the image would need to say something new in a space that is supposed to be revolutionary. But those are just my thoughts!"
+  },
+  {
+    "objectID": "posts/charts-dos-and-donts/index.html",
+    "href": "posts/charts-dos-and-donts/index.html",
+    "title": "Charts: Do’s and Don’ts",
+    "section": "",
+    "text": "First up is this chart:\n\nData visualization is my passion.\nThe cool thing about data visualization is that even a layperson can tell which charts are good. Being intuitive to a wide range of people is what makes it good. So what we see here is an example that everyone, literally everyone, can tell leaves a lot to be desired.\nFirst of all, the color scheme looks like a rave party. My first intuition is that the columns of a similar color are the same country, but the chart actually shows the colors are for years. If the colors represented countries, then the chart would be more readable because it would be easier to see the rises and falls of each country at a glance. Also, the 3D angle of the chart makes it hard to compare the bars in the middle to the axes. Hoe many bananas did Ecuador export in 1994? That may be (relatively) easy to answer. But how many bananas did Guatemala export in 2000? I have no idea. It would be faster to Google it than stare at this chart to try and find out.\nAnd the bananas don’t help.\nIf you have to squint at a chart, pore over it endlessly, then it is a bad chart. The point of charts is to help humans understand and contextualize raw numbers that otherwise would not be very understandable. People can catch on quickly and find new relationships between things when they see them in a well made, intuitive chart."
+  },
+  {
+    "objectID": "posts/murrells-rgraphics-basic-r-programs/index.html",
+    "href": "posts/murrells-rgraphics-basic-r-programs/index.html",
+    "title": "Paul Murrell’s RGraphics: Basic R Programs",
+    "section": "",
+    "text": "par()\nlines()\npoints()\naxis()\nbox()\ntext()\nmtext()\nhist()\nboxplot()\nlegend()\npersp()\nnames()\npie()"
   }
 ]

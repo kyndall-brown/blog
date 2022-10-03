@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/charts-dos-and-donts/index.html",
+      "/posts/generative-art-discussion-and-analysis/index.html",
+      "/posts/murrells-rgraphics-basic-r-programs/index.html"
     ]
   }
 ]
