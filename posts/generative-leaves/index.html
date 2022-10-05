@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kyndall Brown">
-<meta name="dcterms.date" content="2022-09-30">
+<meta name="dcterms.date" content="2022-09-28">
 
-<title>Kyndall’s Blog - Generative Art</title>
+<title>Kyndall’s Blog - Generative Leaves</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,11 +101,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Generative Art</h1>
-            <p class="subtitle lead">Analysis and discussion</p>
+      <h1 class="title">Generative Leaves</h1>
+            <p class="subtitle lead">Classic graphing fun!</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">visualization</div>
                 <div class="quarto-category">EPPS6356</div>
                 <div class="quarto-category">assignment01</div>
               </div>
@@ -125,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 30, 2022</p>
+        <p class="date">September 28, 2022</p>
       </div>
     </div>
       
@@ -142,12 +141,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>For this post, I am bringing up something that’s been in the news a lot lately: AI art. I wanted to do a throwback to an earlier time in the field, so I found <a href="https://www.nytimes.com/2018/10/22/arts/design/christies-art-artificial-intelligence-obvious.html" title="https://www.nytimes.com/2018/10/22/arts/design/christies-art-artificial-intelligence-obvious.html">this article by The New York Times</a> from 2015 about a piece (pictured above) that was actually put on auction at Christie’s in New York.</p>
-<p><img src="23aiportrait5-superJumbo.webp" class="img-fluid"></p>
-<p>The piece is titled “Edmond de Belamy, from La Famille de Belamy,” and was created by Obvious, a French trio consisting of a computer science student and two businessmen. Nobody in Obvious had a background in art… which is obvious. Sorry, I had to go for it.</p>
-<p>The image shows a blurry impression of a portrait of a white man in a 17th century suit. The black of his suit and hair bleed seamlessly with the splash of black behind his head. The whole thing has the texture of brush strokes, but there is no clear direction to them, only vague swirls. He is positioned at the upper left corner of the canvas, with a generous amount of ivory beige between him and the bottom right corner. In sharp contrast to the man-shape smudge, occupying the lower right corner, is the sharp black text of a formula - the formula the Generative Adversarial Network used to create him.</p>
-<p>This image is from some time ago, but experts in AI art even at that time were wondering how that image made it to Christie’s. GANs had been used for years by 2015, and other AI artists were already pioneering new methods. The code the team used to create the image was even open source. Christie’s reached out the the trio first, apparently in a bid to gauge the appetite for AI work among the artistic elite. The same place that sold a Leonardo da Vinci for $450 million only set the starting bid for this piece at $7,000.</p>
-<p>I, personally, think it’s just ok. It’s neat, but it doesn’t seem to explore anything else besides rote memorization and repetition, like a child in school. The white space at the bottom is like a metaphor for how much more the image would need to say something new in a space that is supposed to be revolutionary. But those are just my thoughts!</p>
+<p>After running the code, it created this leaf:</p>
+<p><img src="blueviolet_leaf.png" class="img-fluid"></p>
+<p>I created a few more leaves by changing the code. For my next leaf, I changed the color to sienna2 and altered the code like this:</p>
+<p>{angle=20} depth=6</p>
+<p>The resulting leaf looked like this:</p>
+<p><img src="sienna2_leaf.png" class="img-fluid"></p>
+<p>It’s interesting how the rest of the leaf was unchanged by it added this extra leaf on the side, I didn’t expect that!</p>
+<p>I made one final leaf by changing the color to lightcyan and altering the code like this:</p>
+<p>{axiom=“X”} rules=list(“X”=“F-[[X]+X]+F[+FX]-X”, “F”=“FF+1”) angle=23 depth=7</p>
+<p>I changed the angle to 23, but also the depth to 7 and added +1 to “F” in the axiom variable. The result was shocking:</p>
+<p><img src="lightcyan_leaf.png" class="img-fluid"></p>
+<p>It’s amazing how a simple change can produce such large effects!</p>
 
 
 

@@ -23,14 +23,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Kyndall’s Blog",
+    "title": "Kyndall’s Blog - Homepage",
     "section": "",
-    "text": "analysis\n\n\nvisualization\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nanalysis\n\n\nvisualization\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\nNo matching items"
+    "text": "This is my corner where I will post little things I find about data science and data visualization and share them with you all. I hope you will stick around and check back!"
   },
   {
     "objectID": "posts/generative-art-discussion-and-analysis/index.html",
     "href": "posts/generative-art-discussion-and-analysis/index.html",
-    "title": "Generative Art: Discussion and Analysis",
+    "title": "Generative Art",
     "section": "",
     "text": "The piece is titled “Edmond de Belamy, from La Famille de Belamy,” and was created by Obvious, a French trio consisting of a computer science student and two businessmen. Nobody in Obvious had a background in art… which is obvious. Sorry, I had to go for it.\nThe image shows a blurry impression of a portrait of a white man in a 17th century suit. The black of his suit and hair bleed seamlessly with the splash of black behind his head. The whole thing has the texture of brush strokes, but there is no clear direction to them, only vague swirls. He is positioned at the upper left corner of the canvas, with a generous amount of ivory beige between him and the bottom right corner. In sharp contrast to the man-shape smudge, occupying the lower right corner, is the sharp black text of a formula - the formula the Generative Adversarial Network used to create him.\nThis image is from some time ago, but experts in AI art even at that time were wondering how that image made it to Christie’s. GANs had been used for years by 2015, and other AI artists were already pioneering new methods. The code the team used to create the image was even open source. Christie’s reached out the the trio first, apparently in a bid to gauge the appetite for AI work among the artistic elite. The same place that sold a Leonardo da Vinci for $450 million only set the starting bid for this piece at $7,000.\nI, personally, think it’s just ok. It’s neat, but it doesn’t seem to explore anything else besides rote memorization and repetition, like a child in school. The white space at the bottom is like a metaphor for how much more the image would need to say something new in a space that is supposed to be revolutionary. But those are just my thoughts!"
   },
@@ -44,8 +44,120 @@
   {
     "objectID": "posts/murrells-rgraphics-basic-r-programs/index.html",
     "href": "posts/murrells-rgraphics-basic-r-programs/index.html",
-    "title": "Paul Murrell’s RGraphics: Basic R Programs",
+    "title": "Paul Murrell’s RGraphics",
     "section": "",
-    "text": "par()\nlines()\npoints()\naxis()\nbox()\ntext()\nmtext()\nhist()\nboxplot()\nlegend()\npersp()\nnames()\npie()"
+    "text": "This graph depicts the Happy Planet Index against life expectancy for each country, using the par(), lines(), points(), axis(), box(), text(), and mtext() functions.\n\nThis histogram depicts the countries per continent:"
+  },
+  {
+    "objectID": "posts/generative-leaves/index.html",
+    "href": "posts/generative-leaves/index.html",
+    "title": "Generative Leaves",
+    "section": "",
+    "text": "I created a few more leaves by changing the code. For my next leaf, I changed the color to sienna2 and altered the code like this:\n{angle=20} depth=6\nThe resulting leaf looked like this:\n\nIt’s interesting how the rest of the leaf was unchanged by it added this extra leaf on the side, I didn’t expect that!\nI made one final leaf by changing the color to lightcyan and altering the code like this:\n{axiom=“X”} rules=list(“X”=“F-[[X]+X]+F[+FX]-X”, “F”=“FF+1”) angle=23 depth=7\nI changed the angle to 23, but also the depth to 7 and added +1 to “F” in the axiom variable. The result was shocking:\n\nIt’s amazing how a simple change can produce such large effects!"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Kyndall’s Blog - Homepage",
+    "section": "",
+    "text": "Basic Graphics for a Basic Gal\n\n\n\n\nanalysis\n\n\nvisualization\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nBut mostly don’ts\n\n\n\n\nanalysis\n\n\nvisualization\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nAnalysis and discussion\n\n\n\n\nnews\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nClassic graphing fun!\n\n\n\n\nvisualization\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Kyndall’s Blog - All Posts",
+    "section": "",
+    "text": "Awesome. No, it’s not up yet.\n\n\n\n\n\n\n\n\n\nOct 4, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nBasic Graphics for a Basic Gal\n\n\n\n\nanalysis\n\n\nvisualization\n\n\nEPPS6356\n\n\nassignments\n\n\n\n\n\n\n\n\n\n\n\nOct 4, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nVariable width bar chart and stacked bar graphs\n\n\n\n\nvisualization\n\n\nEPPS6356\n\n\nhackathons\n\n\nassignments\n\n\n\n\n\n\n\n\n\n\n\nOct 3, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nBut mostly don’ts\n\n\n\n\nanalysis\n\n\nvisualization\n\n\nEPPS6356\n\n\nassignments\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nAnalysis and discussion\n\n\n\n\nnews\n\n\nanalysis\n\n\nEPPS6356\n\n\nassignments\n\n\n\n\n\n\n\n\n\n\n\nSep 30, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\n  \n\n\n\n\n\nClassic graphing fun!\n\n\n\n\nvisualization\n\n\nEPPS6356\n\n\nassignments\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\nKyndall Brown\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/first-hackathon-results/index.html",
+    "href": "posts/first-hackathon-results/index.html",
+    "title": "First Hackathon Results",
+    "section": "",
+    "text": "Chart #1: Variable Width Bar Chart\n\n\n\nChart #2: Stacked Bar Charts\n\nThanks to my team: Leslie, Ana, Theophilus, Michelle and myself. Shoutout to Michelle for staying up late and working hard, and to Leslie for making the final breakthrough that led to our finished charts!"
+  },
+  {
+    "objectID": "archive.html",
+    "href": "archive.html",
+    "title": "Archive",
+    "section": "",
+    "text": "Comparing Regression Models\n\n\nAwesome. No, it’s not up yet.\n\n\n\n\n\n\nOct 4, 2022\n\n\n\n\n\n\n\n\nPaul Murrell’s RGraphics\n\n\nBasic Graphics for a Basic Gal\n\n\n\n\n\n\nOct 4, 2022\n\n\n\n\n\n\n\n\nFirst Hackathon Results\n\n\nVariable width bar chart and stacked bar graphs\n\n\n\n\n\n\nOct 3, 2022\n\n\n\n\n\n\n\n\nCharts: Do’s and Don’ts\n\n\nBut mostly don’ts\n\n\n\n\n\n\nSep 30, 2022\n\n\n\n\n\n\n\n\nGenerative Art\n\n\nAnalysis and discussion\n\n\n\n\n\n\nSep 30, 2022\n\n\n\n\n\n\n\n\nGenerative Leaves\n\n\nClassic graphing fun!\n\n\n\n\n\n\nSep 28, 2022\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/comparing-regression-models/index.html",
+    "href": "posts/comparing-regression-models/index.html",
+    "title": "Comparing Regression Models",
+    "section": "",
+    "text": "Not up quite yet, I’m working on it though!"
+  },
+  {
+    "objectID": "posts/epps-6356-assignment-01/epps-6356-assignment-01.html",
+    "href": "posts/epps-6356-assignment-01/epps-6356-assignment-01.html",
+    "title": "Series: EPPS 6356 Assignment #1",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/epps-6356-assignment-01/generative-art-discussion-and-analysis/index.html",
+    "href": "posts/epps-6356-assignment-01/generative-art-discussion-and-analysis/index.html",
+    "title": "Generative Art",
+    "section": "",
+    "text": "The piece is titled “Edmond de Belamy, from La Famille de Belamy,” and was created by Obvious, a French trio consisting of a computer science student and two businessmen. Nobody in Obvious had a background in art… which is obvious. Sorry, I had to go for it.\nThe image shows a blurry impression of a portrait of a white man in a 17th century suit. The black of his suit and hair bleed seamlessly with the splash of black behind his head. The whole thing has the texture of brush strokes, but there is no clear direction to them, only vague swirls. He is positioned at the upper left corner of the canvas, with a generous amount of ivory beige between him and the bottom right corner. In sharp contrast to the man-shape smudge, occupying the lower right corner, is the sharp black text of a formula - the formula the Generative Adversarial Network used to create him.\nThis image is from some time ago, but experts in AI art even at that time were wondering how that image made it to Christie’s. GANs had been used for years by 2015, and other AI artists were already pioneering new methods. The code the team used to create the image was even open source. Christie’s reached out the the trio first, apparently in a bid to gauge the appetite for AI work among the artistic elite. The same place that sold a Leonardo da Vinci for $450 million only set the starting bid for this piece at $7,000.\nI, personally, think it’s just ok. It’s neat, but it doesn’t seem to explore anything else besides rote memorization and repetition, like a child in school. The white space at the bottom is like a metaphor for how much more the image would need to say something new in a space that is supposed to be revolutionary. But those are just my thoughts!"
+  },
+  {
+    "objectID": "posts/epps-6356-assignment-01/generative-leaves/index.html",
+    "href": "posts/epps-6356-assignment-01/generative-leaves/index.html",
+    "title": "Generative Leaves",
+    "section": "",
+    "text": "I created a few more leaves by changing the code. For my next leaf, I changed the color to sienna2 and altered the code like this:\n{angle=20} depth=6\nThe resulting leaf looked like this:\n\nIt’s interesting how the rest of the leaf was unchanged by it added this extra leaf on the side, I didn’t expect that!\nI made one final leaf by changing the color to lightcyan and altering the code like this:\n{axiom=“X”} rules=list(“X”=“F-[[X]+X]+F[+FX]-X”, “F”=“FF+1”) angle=23 depth=7\nI changed the angle to 23, but also the depth to 7 and added +1 to “F” in the axiom variable. The result was shocking:\n\nIt’s amazing how a simple change can produce such large effects!"
+  },
+  {
+    "objectID": "posts/epps-6356-assignment-01/index.html",
+    "href": "posts/epps-6356-assignment-01/index.html",
+    "title": "Series: EPPS 6356 Assignment #1",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/epps6356-assignment01/index.html",
+    "href": "posts/epps6356-assignment01/index.html",
+    "title": "Series: EPPS 6356 Assignment #1",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
+    "href": "posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
+    "title": "Generative Art",
+    "section": "",
+    "text": "The piece is titled “Edmond de Belamy, from La Famille de Belamy,” and was created by Obvious, a French trio consisting of a computer science student and two businessmen. Nobody in Obvious had a background in art… which is obvious. Sorry, I had to go for it.\nThe image shows a blurry impression of a portrait of a white man in a 17th century suit. The black of his suit and hair bleed seamlessly with the splash of black behind his head. The whole thing has the texture of brush strokes, but there is no clear direction to them, only vague swirls. He is positioned at the upper left corner of the canvas, with a generous amount of ivory beige between him and the bottom right corner. In sharp contrast to the man-shape smudge, occupying the lower right corner, is the sharp black text of a formula - the formula the Generative Adversarial Network used to create him.\nThis image is from some time ago, but experts in AI art even at that time were wondering how that image made it to Christie’s. GANs had been used for years by 2015, and other AI artists were already pioneering new methods. The code the team used to create the image was even open source. Christie’s reached out the the trio first, apparently in a bid to gauge the appetite for AI work among the artistic elite. The same place that sold a Leonardo da Vinci for $450 million only set the starting bid for this piece at $7,000.\nI, personally, think it’s just ok. It’s neat, but it doesn’t seem to explore anything else besides rote memorization and repetition, like a child in school. The white space at the bottom is like a metaphor for how much more the image would need to say something new in a space that is supposed to be revolutionary. But those are just my thoughts!"
+  },
+  {
+    "objectID": "posts/epps6356-assignment01/generative-leaves/index.html",
+    "href": "posts/epps6356-assignment01/generative-leaves/index.html",
+    "title": "Generative Leaves",
+    "section": "",
+    "text": "# Title Fall color\n# Credit: https://fronkonstin.com\n\n# Install packages\n\ninstall.packages(\"gsubfn\")\ninstall.packages(\"tidyverse\")\nlibrary(gsubfn)\nlibrary(tidyverse)\n\n# Define elements in plant art\n# Each image corresponds to a different axiom, rules, angle and depth\n\n# Leaf of Fall\n\naxiom=\"X\"\nrules=list(\"X\"=\"F-[[X]+X]+F[+FX]-X\", \"F\"=\"FF\")\nangle=22.5\ndepth=6\n\n\nfor (i in 1:depth) axiom=gsubfn(\".\", rules, axiom)\n\nactions=str_extract_all(axiom, \"\\\\d*\\\\+|\\\\d*\\\\-|F|L|R|\\\\[|\\\\]|\\\\|\") %>% unlist\n\nstatus=data.frame(x=numeric(0), y=numeric(0), alfa=numeric(0))\npoints=data.frame(x1 = 0, y1 = 0, x2 = NA, y2 = NA, alfa=90, depth=1)\n\n\n# Generating data\n# Note: may take a minute or two\n\nfor (action in actions)\n{\n  if (action==\"F\")\n  {\n    x=points[1, \"x1\"]+cos(points[1, \"alfa\"]*(pi/180))\n    y=points[1, \"y1\"]+sin(points[1, \"alfa\"]*(pi/180))\n    points[1,\"x2\"]=x\n    points[1,\"y2\"]=y\n    data.frame(x1 = x, y1 = y, x2 = NA, y2 = NA,\n               alfa=points[1, \"alfa\"],\n               depth=points[1,\"depth\"]) %>% rbind(points)->points\n  }\n  if (action %in% c(\"+\", \"-\")){\n    alfa=points[1, \"alfa\"]\n    points[1, \"alfa\"]=eval(parse(text=paste0(\"alfa\",action, angle)))\n  }\n  if(action==\"[\"){\n    data.frame(x=points[1, \"x1\"], y=points[1, \"y1\"], alfa=points[1, \"alfa\"]) %>%\n      rbind(status) -> status\n    points[1, \"depth\"]=points[1, \"depth\"]+1\n  }\n\n  if(action==\"]\"){\n    depth=points[1, \"depth\"]\n    points[-1,]->points\n    data.frame(x1=status[1, \"x\"], y1=status[1, \"y\"], x2=NA, y2=NA,\n               alfa=status[1, \"alfa\"],\n               depth=depth-1) %>%\n      rbind(points) -> points\n    status[-1,]->status\n  }\n}\n\nggplot() +\n  geom_segment(aes(x = x1, y = y1, xend = x2, yend = y2),\n               lineend = \"round\",\n               color=\"burlywood3\", # Set your own Fall color?\n               data=na.omit(points)) +\n  coord_fixed(ratio = 1) +\n  theme_void() # No grid nor axes\nAfter running the code, it created this leaf:\n\nI created a few more leaves by changing the code. For my next leaf, I changed the color to sienna2 and altered the code like this:\nangle=20\ndepth=6\nThe resulting leaf looked like this:\n\nIt’s interesting how the rest of the leaf was unchanged by it added this extra leaf on the side, I didn’t expect that!\nI made one final leaf by changing the color to lightcyan and altering the code like this:\naxiom=\"X\"\nrules=list(\"X\"=\"F-\\[\\[X\\]+X\\]+F\\[+FX\\]-X\", \"F\"=\"FF+1\")\nangle=23\ndepth=7\nI changed the angle to 23, but also the depth to 7 and added +1 to “F” in the axiom variable. The result was shocking:\n\nIt’s amazing how a simple change can produce such large effects!"
+  },
+  {
+    "objectID": "posts/epps6356-assignment01/series-epps6356-assignment01.html",
+    "href": "posts/epps6356-assignment01/series-epps6356-assignment01.html",
+    "title": "Series: EPPS 6356 Assignment #1",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/epps6356-assignment01.html",
+    "href": "posts/epps6356-assignment01.html",
+    "title": "Series: EPPS 6356 Assignment #1",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "epps6356-assignment01.html",
+    "href": "epps6356-assignment01.html",
+    "title": "Series: EPPS 6356 Assignment #1",
+    "section": "",
+    "text": "Sep 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 28, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

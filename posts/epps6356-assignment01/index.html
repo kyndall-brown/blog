@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kyndall Brown">
-<meta name="dcterms.date" content="2022-09-30">
 
-<title>Kyndall’s Blog - Generative Art</title>
+<title>Kyndall’s Blog - Series: EPPS 6356 Assignment #1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../profile.jpg" rel="icon" type="image/jpeg">
+<link href="../../cover.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -61,12 +61,42 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,6 +118,44 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../../posts.html">Posts</a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6356" role="button" data-bs-toggle="dropdown" aria-expanded="false">EPPS6356</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6356">    
+        <li>
+    <a class="dropdown-item" href="../../posts/epps6356-assignment01/index.html">
+ <span class="dropdown-text">Assignment #1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/murrells-rgraphics-basic-r-programs/index.html">
+ <span class="dropdown-text">Assignment #2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/comparing-regression-models/index.html">
+ <span class="dropdown-text">Assignment #3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts/first-hackathon-results/index.html">
+ <span class="dropdown-text">Assignment #4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts.html">
+ <span class="dropdown-text">Assignment #5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../posts.html">
+ <span class="dropdown-text">Prepare for Class</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6302" role="button" data-bs-toggle="dropdown" aria-expanded="false">EPPS6302</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6302">    
+        <li>
+    <a class="dropdown-item" href="../../posts.html">
+ <span class="dropdown-text">Prepare for Class</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="https://kyndall-brown.github.io/">Github</a>
   </li>  
@@ -100,58 +168,50 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Generative Art</h1>
-            <p class="subtitle lead">Analysis and discussion</p>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">analysis</div>
-                <div class="quarto-category">EPPS6356</div>
-                <div class="quarto-category">assignment01</div>
-              </div>
-                  </div>
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Series: EPPS 6356 Assignment #1</h1>
+            <p class="subtitle lead">Both of these posts are part of Assignment #1 for EPPS 6356.</p>
+                      </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Kyndall Brown </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">September 30, 2022</p>
-      </div>
-    </div>
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
-<p>For this post, I am bringing up something that’s been in the news a lot lately: AI art. I wanted to do a throwback to an earlier time in the field, so I found <a href="https://www.nytimes.com/2018/10/22/arts/design/christies-art-artificial-intelligence-obvious.html" title="https://www.nytimes.com/2018/10/22/arts/design/christies-art-artificial-intelligence-obvious.html">this article by The New York Times</a> from 2015 about a piece (pictured above) that was actually put on auction at Christie’s in New York.</p>
-<p><img src="23aiportrait5-superJumbo.webp" class="img-fluid"></p>
-<p>The piece is titled “Edmond de Belamy, from La Famille de Belamy,” and was created by Obvious, a French trio consisting of a computer science student and two businessmen. Nobody in Obvious had a background in art… which is obvious. Sorry, I had to go for it.</p>
-<p>The image shows a blurry impression of a portrait of a white man in a 17th century suit. The black of his suit and hair bleed seamlessly with the splash of black behind his head. The whole thing has the texture of brush strokes, but there is no clear direction to them, only vague swirls. He is positioned at the upper left corner of the canvas, with a generous amount of ivory beige between him and the bottom right corner. In sharp contrast to the man-shape smudge, occupying the lower right corner, is the sharp black text of a formula - the formula the Generative Adversarial Network used to create him.</p>
-<p>This image is from some time ago, but experts in AI art even at that time were wondering how that image made it to Christie’s. GANs had been used for years by 2015, and other AI artists were already pioneering new methods. The code the team used to create the image was even open source. Christie’s reached out the the trio first, apparently in a bid to gauge the appetite for AI work among the artistic elite. The same place that sold a Leonardo da Vinci for $450 million only set the starting bid for this piece at $7,000.</p>
-<p>I, personally, think it’s just ok. It’s neat, but it doesn’t seem to explore anything else besides rote memorization and repetition, like a child in school. The white space at the bottom is like a metaphor for how much more the image would need to say something new in a space that is supposed to be revolutionary. But those are just my thoughts!</p>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

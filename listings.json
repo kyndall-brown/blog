@@ -2,9 +2,68 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/murrells-rgraphics-basic-r-programs/index.html",
       "/posts/charts-dos-and-donts/index.html",
       "/posts/generative-art-discussion-and-analysis/index.html",
-      "/posts/murrells-rgraphics-basic-r-programs/index.html"
+      "/posts/generative-leaves/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/murrells-rgraphics-basic-r-programs/index.html",
+      "/posts/charts-dos-and-donts/index.html",
+      "/posts/generative-art-discussion-and-analysis/index.html",
+      "/posts/generative-leaves/index.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/comparing-regression-models/index.html",
+      "/posts/murrells-rgraphics-basic-r-programs/index.html",
+      "/posts/first-hackathon-results/index.html",
+      "/posts/charts-dos-and-donts/index.html",
+      "/posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
+      "/posts/epps6356-assignment01/generative-leaves/index.html"
+    ]
+  },
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/comparing-regression-models/index.html",
+      "/posts/murrells-rgraphics-basic-r-programs/index.html",
+      "/posts/first-hackathon-results/index.html",
+      "/posts/charts-dos-and-donts/index.html",
+      "/posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
+      "/posts/epps6356-assignment01/generative-leaves/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/epps-6356-assignment-01/epps-6356-assignment-01.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/epps-6356-assignment-01/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/epps6356-assignment01/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/epps6356-assignment01/series-epps6356-assignment01.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/epps6356-assignment01.html",
+    "items": []
+  },
+  {
+    "listing": "/epps6356-assignment01.html",
+    "items": [
+      "/posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
+      "/posts/epps6356-assignment01/generative-leaves/index.html"
     ]
   }
 ]
