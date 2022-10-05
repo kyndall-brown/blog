@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Kyndall Brown">
-<meta name="dcterms.date" content="2022-10-04">
+<meta name="dcterms.date" content="2022-10-05">
 
 <title>Kyndall’s Blog - Paul Murrell’s RGraphics</title>
 <style>
@@ -92,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6356" role="button" data-bs-toggle="dropdown" aria-expanded="false">EPPS6356</a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6356">    
         <li>
-    <a class="dropdown-item" href="../../posts/epps6356-assignment01/index.html">
+    <a class="dropdown-item" href="../../epps6356-assignment01.html">
  <span class="dropdown-text">Assignment #1</span></a>
   </li>  
         <li>
@@ -108,11 +108,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Assignment #4</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../posts.html">
+    <a class="dropdown-item" href="../../archive.html">
  <span class="dropdown-text">Assignment #5</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../posts.html">
+    <a class="dropdown-item" href="../../archive.html">
  <span class="dropdown-text">Prepare for Class</span></a>
   </li>  
     </ul>
@@ -121,11 +121,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-epps6302" role="button" data-bs-toggle="dropdown" aria-expanded="false">EPPS6302</a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-epps6302">    
         <li>
-    <a class="dropdown-item" href="../../posts.html">
+    <a class="dropdown-item" href="../../archive.html">
  <span class="dropdown-text">Prepare for Class</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../archive.html">Archive</a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://kyndall-brown.github.io/">Github</a>
   </li>  
@@ -163,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 4, 2022</p>
+        <p class="date">October 5, 2022</p>
       </div>
     </div>
       
@@ -181,10 +184,123 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>For this post, I am going through the data from the <a href="https://happyplanetindex.org/" title="https://happyplanetindex.org/">Happy Planet Index</a>, and using some basic functions in R to visualize it.</p>
-<p>This graph depicts the Happy Planet Index against life expectancy for each country, using the par(), lines(), points(), axis(), box(), text(), and mtext() functions.</p>
+<p>This graph depicts the Happy Planet Index against life expectancy for each country:</p>
 <p><img src="hpi_vs_life.png" class="img-fluid" alt="HPI vs Life Expectancy"></p>
-<p>This histogram depicts the countries per continent:</p>
-<p><img src="countries_freq.png" class="img-fluid" alt="Countries by Continent"></p>
+<p>This histogram depicts the ecological footprint of all countries:</p>
+<p><img src="eco_footprint_hist.png" class="img-fluid" alt="Ecological Foorptint Histogram"></p>
+<p>This graph depicts a boxplot of nations’ Ladder of Life - Wellbeing score by continent:</p>
+<p><img src="ladder_boxplot.png" class="img-fluid" alt="Ladder of Wellbeing Boxplot"></p>
+<p>This is a perspective plot:</p>
+<p><img src="persp.png" class="img-fluid" alt="Perspective plot"></p>
+<p>The final graph is a pie chart showing the global population by continent:</p>
+<p><img src="pop_pie.png" class="img-fluid" alt="Population Pie Chart"></p>
+<p>The code used to produce these graphs is found below:</p>
+<pre><code># plotting exercise using happy planet index data:
+setwd("C:/Users/professionalClassic/Desktop/_fall2022/EPPS_6356/assign_02")
+hpi &lt;- read.csv("happyplanetindex.csv")
+
+#renaming and adding data to our dataframe
+hpi$Continent_num &lt;- hpi$Continent
+hpi["Continent"][hpi["Continent"] == 1] &lt;- "Latin Amer."
+hpi["Continent"][hpi["Continent"] == 2] &lt;- "N. Amer./Oc."
+hpi["Continent"][hpi["Continent"] == 3] &lt;- "W. Europe"
+hpi["Continent"][hpi["Continent"] == 4] &lt;- "Mid. East"
+hpi["Continent"][hpi["Continent"] == 5] &lt;- "Sub-S. Africa"
+hpi["Continent"][hpi["Continent"] == 6] &lt;- "S. Asia"
+hpi["Continent"][hpi["Continent"] == 7] &lt;- "E. Europe/C. Asia"
+hpi["Continent"][hpi["Continent"] == 8] &lt;- "E. Asia"
+hpi$Hemisphere &lt;- hpi$Continent
+hpi["Hemisphere"][hpi["Hemisphere"] == "Latin Amer."] &lt;- "South"
+hpi["Hemisphere"][hpi["Hemisphere"] == "N. Amer./Oc."] &lt;- "North"
+hpi["Hemisphere"][hpi["Hemisphere"] == "W. Europe"] &lt;- "North"
+hpi["Hemisphere"][hpi["Hemisphere"] == "Mid. East"] &lt;- "North"
+hpi["Hemisphere"][hpi["Hemisphere"] == "Sub-S. Africa"] &lt;- "South"
+hpi["Hemisphere"][hpi["Hemisphere"] == "S. Asia"] &lt;- "North"
+hpi["Hemisphere"][hpi["Hemisphere"] == "E. Europe/C. Asia"] &lt;- "North"
+hpi["Hemisphere"][hpi["Hemisphere"] == "E. Asia"] &lt;- "North"
+
+
+# line graph:
+par(mar=c(4, 4, 5, 4)) 
+plot.new()
+plot.window(xlim=c(0, 160), ylim=c(50,90))
+lines(hpi$HPI_rank, hpi$Life.Expectancy_years, col="steelblue4")
+points(hpi$HPI_rank, hpi$Life.Expectancy_years, pch=5, col="coral3", cex=0.5)
+par(col="cornsilk3", fg="cornsilk3", col.axis="cornsilk3")
+axis(1, at=seq(0, 160, 20)) # What is the first number standing for?
+axis(2, at=seq(50, 90, 10))
+axis(4, at=seq(50, 90, 10))
+box(bty="u")
+par(col="navajowhite4")
+mtext("Happy Planet Index Ranking", side=1, line=2, cex=0.8)
+mtext("Life Expectancy", side=2, line=2, las=0, cex=0.8)
+mtext("HPI Ranking vs. Life Expectancy", side=3, line=2, cex=2, col="firebrick4")
+text(x=40, y=55, "Life expectancy varies greatly", cex=0.8)
+
+# Histogram
+par(mar=c(4, 4, 3, 4), fg="aquamarine4", cex=0.8,
+    col.axis="aquamarine4", bg="white", col.lab="plum3", col.main="plum3"
+    )
+hist(hpi$Ecological_Footprint_gha, ylim=c(0, 70),freq=TRUE, density=20, 
+     angle=70, col="darkseagreen2",
+     border="aquamarine4", main="Ecological Footprint", xlab="G ha of resource useage",
+     labels=TRUE)
+box(bty="u")
+text(11, 60, "78% of countries use under 5 g ha of resources")
+
+#boxplot
+par(mar=c(3, 4.1, 2.5, 4), fg="cornflowerblue", col.axis="navyblue")
+boxplot(Ladder_of_life_Wellbeing ~ Continent_num, data = hpi,
+        xlab="", col=c("darksalmon", "lightskyblue", "lightskyblue",
+                       "lightskyblue", "darksalmon", "lightskyblue",
+                       "lightskyblue", "lightskyblue"),
+        ylab="", ylim=c(2,8))
+mtext("Continents", side=1, line=2, cex=0.8, col="steelblue4")
+mtext("Ladder of Life Wellbeing", side=2, line=2, col="steelblue4")
+mtext("Ladder of Life by Continent", side=3, line=.5, cex=2,
+      col="steelblue4")
+text(1, 7.5, "L. Amer.")
+text(2, 7.8, "N. Amer./Oc.")
+text(3, 5.5, "W. Eur.")
+text(4, 3.5, "Mid. East")
+text(5, 6.8, "Sub. Africa")
+text(6, 5.7, "S. Asia")
+text(7, 7.2, "E. Eur.")
+text(8, 7.2, "E. Asia")
+legend(0.2, 2.9, c("Northern Hemisphere", "Southern Hemisphere"), 
+       fill = c("lightskyblue", "darksalmon"), 
+       bty="n")
+
+# Persp (source: https://github.com/datageneration/datavisualization/blob/master/R/murrell01.R)
+x &lt;- seq(-10, 10, length= 40)
+y &lt;- x
+f &lt;- function(x,y) { r &lt;- sqrt(x^2+y^2); 10 * tan(r)/(0.2*r)}
+z &lt;- outer(x, y, f)
+z[is.na(z)] &lt;- 1
+# 0.5 to include z axis label
+par(mar=c(0, 0.5, 0, 0), lwd=0.5)
+persp(x, y, z, theta = 60, phi = 10, 
+      expand = 0.5)
+
+# Pie Chart
+par(mar=c(0, 2, 1.5, 2), xpd=TRUE, cex=0.9)
+cont.pop &lt;- c(with(hpi, sum(Population_thousands[Continent_num == 1])), 
+              with(hpi, sum(Population_thousands[Continent_num == 2])),
+              with(hpi, sum(Population_thousands[Continent_num == 3])),
+              with(hpi, sum(Population_thousands[Continent_num == 4])),
+              with(hpi, sum(Population_thousands[Continent_num == 5])),
+              with(hpi, sum(Population_thousands[Continent_num == 6])),
+              with(hpi, sum(Population_thousands[Continent_num == 7])),
+              with(hpi, sum(Population_thousands[Continent_num == 8])))
+names(cont.pop) &lt;- c("Latin America", "North America and Oceana",
+                      "Western Europe", "Middle East and North Africa",
+                     "Sub-Saharan Africa", "South Asia",
+                     "Eastern Europe and Central Asia", "East Asia")
+pie(cont.pop, col = c("lightcoral","aquamarine", "cyan2", "lightseagreen",
+                      "orangered1","cornflowerblue", "royalblue1",
+                      "slategray2")) 
+mtext("Global Population by Continent", cex = 1.5, )</code></pre>
+<p>Thank you for visiting!</p>
 
 
 
