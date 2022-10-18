@@ -20,23 +20,37 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/second-hackathon-results/index.html",
+      "/posts/epps-6356-prepare-for-class-6/comparing-data-visualizations/index.html",
+      "/posts/epps-6356-prepare-for-class-6/thomas-lind-pederson/index.html",
+      "/posts/epps-6356-prepare-for-class-7/literate-programming/index.html",
+      "/posts/epps-6356-prepare-for-class-7/music-visualization/index.html",
+      "/posts/epps-6356-prepare-for-class-5/data-visualization-and-data-science-embl/index.html",
+      "/posts/epps-6356-prepare-for-class-5/the-parable-of-google-flu/index.html",
       "/posts/anscombes-quartet/index.html",
       "/posts/murrells-rgraphics-basic-r-programs/index.html",
       "/posts/first-hackathon-results/index.html",
       "/posts/charts-dos-and-donts/index.html",
-      "/posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
-      "/posts/epps6356-assignment01/generative-leaves/index.html"
+      "/posts/epps-6356-assignment-1/generative-art-discussion-and-analysis/index.html",
+      "/posts/epps-6356-assignment-1/generative-leaves/index.html"
     ]
   },
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/second-hackathon-results/index.html",
+      "/posts/epps-6356-prepare-for-class-6/comparing-data-visualizations/index.html",
+      "/posts/epps-6356-prepare-for-class-6/thomas-lind-pederson/index.html",
+      "/posts/epps-6356-prepare-for-class-7/literate-programming/index.html",
+      "/posts/epps-6356-prepare-for-class-7/music-visualization/index.html",
+      "/posts/epps-6356-prepare-for-class-5/data-visualization-and-data-science-embl/index.html",
+      "/posts/epps-6356-prepare-for-class-5/the-parable-of-google-flu/index.html",
       "/posts/anscombes-quartet/index.html",
       "/posts/murrells-rgraphics-basic-r-programs/index.html",
       "/posts/first-hackathon-results/index.html",
       "/posts/charts-dos-and-donts/index.html",
-      "/posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
-      "/posts/epps6356-assignment01/generative-leaves/index.html"
+      "/posts/epps-6356-assignment-1/generative-art-discussion-and-analysis/index.html",
+      "/posts/epps-6356-assignment-1/generative-leaves/index.html"
     ]
   },
   {
@@ -64,6 +78,34 @@
     "items": [
       "/posts/epps6356-assignment01/generative-art-discussion-and-analysis/index.html",
       "/posts/epps6356-assignment01/generative-leaves/index.html"
+    ]
+  },
+  {
+    "listing": "/epps-6356-assignment-1.html",
+    "items": [
+      "/posts/epps-6356-assignment-1/generative-art-discussion-and-analysis/index.html",
+      "/posts/epps-6356-assignment-1/generative-leaves/index.html"
+    ]
+  },
+  {
+    "listing": "/epps-6356-prepare-for-class-5.html",
+    "items": [
+      "/posts/epps-6356-prepare-for-class-5/data-visualization-and-data-science-embl/index.html",
+      "/posts/epps-6356-prepare-for-class-5/the-parable-of-google-flu/index.html"
+    ]
+  },
+  {
+    "listing": "/epps-6356-prepare-for-class-6.html",
+    "items": [
+      "/posts/epps-6356-prepare-for-class-6/comparing-data-visualizations/index.html",
+      "/posts/epps-6356-prepare-for-class-6/thomas-lind-pederson/index.html"
+    ]
+  },
+  {
+    "listing": "/epps-6356-prepare-for-class-7.html",
+    "items": [
+      "/posts/epps-6356-prepare-for-class-7/literate-programming/index.html",
+      "/posts/epps-6356-prepare-for-class-7/music-visualization/index.html"
     ]
   }
 ]

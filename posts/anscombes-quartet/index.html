@@ -213,6 +213,89 @@ ul.task-list li input[type="checkbox"] {
 <p>But thankfully, I can use R to put them all in the same graph and spruce them up and give each dataset a better title! This is what I came up with:</p>
 <p><img src="anscombe_fancy.png" class="img-fluid"></p>
 <p>It may seem cheesy, but I am even proud I managed to figure out how to make a multicolored title like that. Hooray!</p>
+<p>But I can do even better. Instead of using the <code>base-r</code>, we can use <code>ggplot2</code>!</p>
+<p>This is my final plot using <code>theme_solarized</code>:</p>
+<p><img src="anscombe_ggplot.png" class="img-fluid"></p>
+<p>I really like how it turned out! The code is below.</p>
+<p><code># Anscombe (1973) Quartlet</code></p>
+<p><code>library(tidyverse)</code></p>
+<p><code>library(gridExtra)</code></p>
+<p><code>library(ggthemes)</code></p>
+<p><code>data(anscombe)  # Load Anscombe's data</code></p>
+<p><code>View(anscombe) # View the data</code></p>
+<p><code>summary(anscombe)</code></p>
+<p><code>## Simple version</code></p>
+<p><code>plot(anscombe$x1,anscombe$y1)</code></p>
+<p><code>summary(anscombe)</code></p>
+<p><code># Create four model objects</code></p>
+<p><code>lm1 &lt;- lm(y1 ~ x1, data=anscombe)</code></p>
+<p><code>summary(lm1)</code></p>
+<p><code>lm2 &lt;- lm(y2 ~ x2, data=anscombe)</code></p>
+<p><code>summary(lm2)</code></p>
+<p><code>lm3 &lt;- lm(y3 ~ x3, data=anscombe)</code></p>
+<p><code>summary(lm3)</code></p>
+<p><code>lm4 &lt;- lm(y4 ~ x4, data=anscombe)</code></p>
+<p><code>summary(lm4)</code></p>
+<p><code>plot(anscombe$x1,anscombe$y1)</code></p>
+<p><code>abline(coefficients(lm1))</code></p>
+<p><code>plot(anscombe$x2,anscombe$y2)</code></p>
+<p><code>abline(coefficients(lm2))</code></p>
+<p><code>plot(anscombe$x3,anscombe$y3)</code></p>
+<p><code>abline(coefficients(lm3))</code></p>
+<p><code>plot(anscombe$x4,anscombe$y4)</code></p>
+<p><code>abline(coefficients(lm4))</code></p>
+<p><code>## Fancy version (per help file)</code></p>
+<p><code>ff &lt;- y ~ x</code></p>
+<p><code># concatenates lm + 1 - 4 and sets them as names for columns 1 - 4</code></p>
+<p><code>mods &lt;- setNames(as.list(1:4), paste0("lm", 1:4))</code></p>
+<p><code># Plot using for loop</code></p>
+<p><code>for(i in 1:4) {  # opens the for loop, i represents 1,2,3, and 4</code></p>
+<p><code>## lapply pastes y then x followed by 1 - 4</code></p>
+<p><code>ff[2:3] &lt;- lapply(paste0(c("y","x"), i), as.name)</code></p>
+<p><code>## or   ff[[2]] &lt;- as.name(paste0("y", i))</code></p>
+<p><code>##      ff[[3]] &lt;- as.name(paste0("x", i))</code></p>
+<p><code>## assigns each regression to mods 1- 4. lmi allows it to be printed</code></p>
+<p><code>mods[[i]] &lt;- lmi &lt;- lm(ff, data = anscombe)</code></p>
+<p><code>print(anova(lmi))</code></p>
+<p><code>}</code></p>
+<p><code>sapply(mods, coef)  # applies a function over a list and returns the result</code></p>
+<p><code>## but only used x1</code></p>
+<p><code>lapply(mods, function(fm) coef(summary(fm))) #lapply will use the whole list</code></p>
+<p><code># Preparing for the plots</code></p>
+<p><code>par(mfrow = c(2, 2), mar = 0.1+c(4,4,1,1), oma =  c(0.1, 0.1, 2, 0.1),</code></p>
+<p><code>family = 'serif')</code></p>
+<p><code>bgcol = c("deepskyblue", "paleturquoise3", "orchid1", "coral")</code></p>
+<p><code>fgcol = c("mediumorchid4", "seagreen", "purple4", "orangered")</code></p>
+<p><code>abcol = c("red", "red", "blue", "blue")</code></p>
+<p><code># Plot charts using for loop</code></p>
+<p><code>for(i in 1:4) {</code></p>
+<p><code>ff[2:3] &lt;- lapply(paste0(c("y","x"), i), as.name)</code></p>
+<p><code>plot(ff, data = anscombe, pch = i + 20, bg = bgcol[i],</code></p>
+<p><code>cex = 1.2, fg = fgcol[i],</code></p>
+<p><code>xlim = c(3, 19), ylim = c(3, 13), xlab = "", ylab = "")</code></p>
+<p><code>abline(mods[[i]], col = abcol[i])</code></p>
+<p><code>mtext("X", side = 1, line = 2, col = fgcol[i])</code></p>
+<p><code>mtext("Y", side = 2, line = 2, col = fgcol[i])</code></p>
+<p><code>mtext(paste0("Dataset ", i), side = 3, line = 0, col = fgcol[i])</code></p>
+<p><code>}</code></p>
+<p><code>ttltxt = c("Anscombe's", "Four", "Regression", "Datasets")</code></p>
+<p><code>for(i in 1:4) {</code></p>
+<p><code>mtext(ttltxt[i], outer = TRUE, cex = 1.5, family = "serif", col = fgcol[i],</code></p>
+<p><code>adj = 0 + i * 0.21)</code></p>
+<p><code>}</code></p>
+<p><code>pt1 &lt;- ggplot(anscombe, aes(x=x1, y=y1)) +</code></p>
+<p><code>geom_point(color = "deepskyblue") + theme_solarized() +</code></p>
+<p><code>ggtitle("Dataset 1")</code></p>
+<p><code>pt2 &lt;- ggplot(anscombe, aes(x=x2, y=y2)) +</code></p>
+<p><code>geom_point(color = "paleturquoise3") + theme_solarized() +</code></p>
+<p><code>ggtitle("Dataset 2")</code></p>
+<p><code>pt3 &lt;- ggplot(anscombe, aes(x=x3, y=y3)) + theme_solarized() +</code></p>
+<p><code>geom_point(color = "orchid1") +</code></p>
+<p><code>ggtitle("Dataset 3")</code></p>
+<p><code>pt4 &lt;- ggplot(anscombe, aes(x=x4, y=y4)) + theme_solarized() +</code></p>
+<p><code>geom_point(color = "coral") +</code></p>
+<p><code>ggtitle("Dataset 4")</code></p>
+<p><code>gridExtra::grid.arrange(pt1, pt2, pt3, pt4, ncol = 2)</code></p>
 
 
 </section>
