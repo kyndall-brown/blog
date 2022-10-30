@@ -20,6 +20,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/sample-shiny-program/index.html",
       "/posts/second-hackathon-results/index.html",
       "/posts/more-great-charts/index.html",
       "/posts/epps-6356-prepare-for-class-6/comparing-data-visualizations/index.html",
@@ -39,6 +40,7 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/sample-shiny-program/index.html",
       "/posts/second-hackathon-results/index.html",
       "/posts/more-great-charts/index.html",
       "/posts/epps-6356-prepare-for-class-6/comparing-data-visualizations/index.html",
