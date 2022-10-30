@@ -270,7 +270,7 @@
     "href": "posts/second-hackathon-results/index.html",
     "title": "Second Hackathon Results",
     "section": "",
-    "text": "This is the result of the Hackathon for our team! This is a Shiny web application that displays three different graphs depending on a user input: either a Vehicles, Diamonds, or Economics graph.\nhttps://personmcdudeguy.shinyapps.io/assignment07/\nThe graphs are the same as my other assignment, but that’s fine by me!"
+    "text": "This is the result of the Hackathon for our team! This is a Shiny web application that displays three different graphs depending on a user input: either a Vehicles, Diamonds, or Economics graph.\nhttps://personmcdudeguy.shinyapps.io/assignment07/\nThe graphs are the same as my other assignment, but that’s fine by me!\nSynergy Report:\nWe did pretty well this time. Special shout-out to Michelle and Leslie for working on the issue right away, and shout-out to Ana for sitting with me and helping me for the final stretch! I used some of the code Leslie provided in my own code.\nThe code for this assignment is hosted here."
   },
   {
     "objectID": "posts/more-great-charts/index.html",
